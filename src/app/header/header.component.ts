@@ -7,10 +7,4 @@ import {DisplayMode} from '../shared/displaymode';
 })
 export class HeaderComponent {
 
-  @Output() modeChanged: EventEmitter<string> = new EventEmitter<string>();
-  public displayModes = DisplayMode;
-
-  onChangeView(mode: string){
-    this.modeChanged.emit(mode);
-  }
 }
